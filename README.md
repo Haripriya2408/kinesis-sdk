@@ -23,3 +23,7 @@ source ~/.bashrc
 
 cmake .. -DBUILD_GSTREAMER_PLUGIN=ON -DBUILD_JNI=TRUE
 
+
+
+https://github.com/awsdocs/Aws-Kinesis-Video-Documentation/blob/master/doc_source/examples-gstreamer-plugin.md
+
