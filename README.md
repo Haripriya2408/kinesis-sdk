@@ -1,3 +1,30 @@
+sudo apt-get install gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-dev
+
+
+pkg-config --version
+cmake --version
+m4 --version
+gst-launch-1.0 --version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sudo apt-get update && sudo apt-get install -y pkg-config cmake m4 build-essential gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
 cmake .. -DBUILD_GSTREAMER_PLUGIN=ON -DBUILD_JNI=TRUE -- Found Log4cplus: /home/lubuntu/Desktop/amazon-kinesis-video-streams-producer-sdk-cpp/open-source/local/lib/liblog4cplus.so  
 CMake Error at /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:230 (message):                                             
