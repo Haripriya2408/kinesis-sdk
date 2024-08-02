@@ -6,3 +6,20 @@ Call Stack (most recent call first):
   /usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake:600 (_FPHSA_FAILURE_MESSAGE)                                            
   /usr/share/cmake-3.28/Modules/FindJNI.cmake:589 (find_package_handle_standard_args)                                                       
   CMakeLists.txt:204 (find_package)   
+
+
+
+
+
+
+sudo apt-get update && sudo apt-get install -y pkg-config cmake m4 build-essential gstreamer1.0-tools gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev default-jdk
+
+
+echo 'export JAVA_HOME=/usr/lib/jvm/default-java' >> ~/.bashrc
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
+
+
+source ~/.bashrc
+
+cmake .. -DBUILD_GSTREAMER_PLUGIN=ON -DBUILD_JNI=TRUE
+
